@@ -1,27 +1,36 @@
 #demo
+    padding: 80px
     .minibox
         border: 2px solid #92c99f
         width: 100px
         height: 100px
-        transition: 2s
-        &:hover
-            height: 20px
-            border: solid #4038a7
-            width: 600px
+        font-size: 20px
+        color: #3514acf3
+        transition: 3s
 
-    @media ( min-width: 400px )
+    @media ( max-width: 400px )
         .minibox
             border: solid #1c9e56
             background-color: #232f94
-
-    @media ( min-width: 980px )
-        .minibox
-            border: solid #92c99f
-
-    @media ( min-width: 600px )
-        .minibox
-            border: solid #282072
-            background-color: #ffff
+            color: #ffff
+            font-size: 20px
             &:hover
+                height: 40px
+                width: 150px
+                border: solid #4038a7
+
+    @media ( min-width: 401px )
+        .minibox
+            border: solid #4539aa
+            &:hover
+                border: 5px solid #261e70
                 width: 140px
                 height: 60px
+
+    @media ( min-width: 800px )
+        .minibox
+            border: solid #bbdfc3
+            &:hover
+                height: 40px
+                width: 150px
+                border: 4px solid #4038a7
